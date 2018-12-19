@@ -1501,8 +1501,8 @@ header .logo a {
  */
 #about {
 	background: #FFFFFF;
-	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-top: 10rem;
+	padding-bottom: 5rem;
 }
 #about .section-intro {
 	margin-bottom: 3rem;
@@ -1631,8 +1631,8 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #resume {
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 10rem;
+	padding-bottom: 5rem;
 }
 
 #resume .resume-header {
@@ -1801,8 +1801,8 @@ header .logo a {
  */
 #portfolio {
 	background: #FFFFFF;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 10rem;
+	padding-bottom: 5rem;
 }
 #portfolio .folio-item {
 	padding: 0;
@@ -2261,7 +2261,7 @@ header .logo a {
  */
 #contact {
 	background: #151515;
-	padding-top: 12rem;
+	padding-top: 10rem;
 	padding-bottom: 7.2rem;
 }
 #contact .section-intro h1 {
