@@ -1095,7 +1095,7 @@ header .row {
 }
 header .row-full{
   width: 100%;
-  background: #000000;
+  /*background: #000000;*/
   display: block;
   min-height: 66px;
 }
@@ -1285,11 +1285,15 @@ header .logo a {
 	header .top-bar {
 		left: 35px;
 	}
+	header .row-full{
+	  background: #000000;  
+	}
 }
 @media only screen and (max-width:400px) {
 	header .top-bar {
 		left: 25px;
 	}
+	
 }
 
 
