@@ -1093,6 +1093,12 @@ header .row {
 	position: relative;
 	min-height: 66px;
 }
+header .row-full{
+  width: 100%;
+  background: #000000;
+  display: block;
+  min-height: 66px;
+}
 header .top-bar {
 	display: block;
 	background: #000000;
