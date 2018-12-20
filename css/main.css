@@ -1285,6 +1285,9 @@ header .logo a {
 	header .row-full{
 	  background: #000000;  
 	}
+	header .top-bar {
+    left: 0px;
+	}
 }
 @media only screen and (max-width:400px) {
 	header .top-bar {
