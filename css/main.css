@@ -1,4 +1,4 @@
-/**
+*
  * =================================================================== 
  *
  *  Main Stylesheet
@@ -2494,6 +2494,27 @@ header .logo a {
 }
 
 
+/*custom*/
+.hidden{
+	display: none;
+}
+.flex-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.flex-column {
+  flex-grow: 1;
+  width: 33%;
+  text-align: center;
+}
+.flex-column i{
+	font-size: 4.5em;
+	color: #cc005f;
+}
+
+
 /** 
  * ===================================================================
  * 18. footer - (_layout.scss)
@@ -2610,4 +2631,4 @@ footer .copyright .fa-heart{
 	background: #000000;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map 
