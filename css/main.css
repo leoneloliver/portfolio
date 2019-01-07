@@ -1,4 +1,4 @@
-*
+/**
  * =================================================================== 
  *
  *  Main Stylesheet
@@ -2609,26 +2609,5 @@ footer .copyright .fa-heart{
 #go-top a:hover {
 	background: #000000;
 }
-/**/
-.hidden{
-	display: none;
-}
-.flex-container {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-.flex-column {
-  flex-grow: 1;
-  width: 33%;
-  text-align: center;
-  padding: 30px 0px;
-}
-.flex-column  i{
-	font-size: 4.5em;
-	color: #cc005f;
-}
 
-
-/*# sourceMappingURL=main.css.map 
+/*# sourceMappingURL=main.css.map */
