@@ -1017,6 +1017,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
 }
+.intro-info img{
+	transform: rotate(0deg);
+	transition: all .3s ease;
+}
+.row.section-intro:hover .intro-info img {
+    transform: rotate(-40deg);
+    transition: all .3s ease;
+}
 
 /**
  * responsive:
