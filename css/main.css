@@ -1859,6 +1859,7 @@ header .logo a {
 }
 .item-wrap {
     border: 12px solid #fff;
+	margin: 12px;;
 }
 
 /**
@@ -2066,7 +2067,9 @@ header .logo a {
 .section-ads span {
 	color: #3F0D39;
 }
-
+.portfolio-content{
+	background-color: #000;
+}
 /**
  * responsive:
  * cta
