@@ -292,11 +292,10 @@
 
 
 
-var getOutboundLink = function(url) {
-	gtag('event', 'click', {
-	  'event_category': 'outbound',
-	  'event_label': url,
-	  'transport_type': 'beacon',
-	  'event_callback': function(){document.location = url;}
+var getOutboundLink = function(event,category,label) {
+	gtag('event', event, {
+	  'event_category': category,
+	  'event_label': label
+	  //'event_callback': function(){document.location = url;}
 	});
   }
