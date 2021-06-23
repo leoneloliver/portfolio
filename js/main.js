@@ -291,11 +291,11 @@
 })(jQuery);
 
 
-
+// traking google events 
 var getOutboundLink = function(event,category,label) {
 	gtag('event', event, {
-	  'event_category': category,
-	  'event_label': label
-	  //'event_callback': function(){document.location = url;}
+		'event_category': category,
+		'event_label': label
+		//'event_callback': function(){document.location = url;}
 	});
-  }
+}
