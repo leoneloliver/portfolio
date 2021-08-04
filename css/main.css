@@ -60,6 +60,7 @@ a, a:visited {
 	transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus, a:active {
+	color: #07d88c;
 	color: #FF0077;
 	outline: 0;
 }
