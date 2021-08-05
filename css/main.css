@@ -1010,7 +1010,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 1.2rem;
 }
 .section-intro h5 {
-	color: #07d88c;
+	color: #0d9a67;
 	font-size: 1.6rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
@@ -1410,7 +1410,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-	color: #cc005f;
+	color: #07d88c;
 }
 
 /**
@@ -1624,7 +1624,7 @@ header .logo a {
 	text-align: center;
 }
 #resume .resume-header h2 {
-	color: #07d88c;
+	color: #0d9a67;
 }
 
 #resume .resume-timeline {
@@ -2123,7 +2123,7 @@ header .logo a {
 	color: white;
 }
 #services .section-intro h5 {
-	color: #07d88c;
+	color: #0d9a67;
 }
 #services .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2502,7 +2502,7 @@ header .logo a {
 }
 .flex-column i{
 	font-size: 4.5em;
-	color: #07d88c;
+	color: #0d9a67;
 }
 
 
