@@ -2072,7 +2072,8 @@ header .logo a {
 	color: #3F0D39;
 }
 .portfolio-content{
-	background-color: #000;
+	background-color: #ebebeb;
+	padding: 20px 0px;
 }
 /**
  * responsive:
