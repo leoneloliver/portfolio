@@ -310,7 +310,7 @@ const listSkills = [
 	{ icon: 'devicon-bootstrap-plain', text: 'bootstrap' },
 	{ icon: 'devicon-vuejs-plain', text: 'vuejs' },
 	{ icon: 'devicon-react-plain', text: 'reactjs' },
-	{ icon: 'devicon-angularjs-plain', text: 'angularjs' },
+	{ icon: 'devicon-tailwindcss-plain', text: 'tailwindcss' },
 	{ icon: 'devicon-gulp-plain', text: 'gulp' },
 	{ icon: 'devicon-git-plain', text: 'git' },
 	{ icon: 'devicon-github-plain', text: 'github' },
