@@ -1196,20 +1196,20 @@
 
 
   
-<script>
-Vue.component('skill-item', {
-  props: ['skill'],
-  template: '<div class="flex-column"><i :class="skill.icon"></i><p>{{ skill.text }}</p></div>'
-})
+	<script>
+	Vue.component('skill-item', {
+		props: ['skill'],
+		template: '<div class="flex-column"><i :class="skill.icon"></i><p>{{ skill.text }}</p></div>'
+	})
 
 
-var app = new Vue({
-  el: '#skills',
-  data: {
-    skills: listSkills
-  }
-})
-</script>
+	var app = new Vue({
+		el: '#skills',
+		data: {
+			skills: listSkills
+		}
+	})
+	</script>
 
 
 </body>
