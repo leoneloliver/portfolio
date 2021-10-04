@@ -7,6 +7,7 @@
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131264837-1"></script>
+	
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
@@ -205,59 +206,13 @@
 				</ul> <!-- /skill-bars -->	
 					
 				<!-- skill-icons -->	
-				<div class="flex-container">
-					<div class="flex-column">
-						<i class="devicon-html5-plain"></i>
-						<p>html5</p>
-					</div>
-					<div class="flex-column">
-						<i class="devicon-css3-plain"></i>
-						<p>css3</p>
-					</div>
-					<div class="flex-column">
-						<i class="devicon-javascript-plain"></i>
-						<p>javascript</p>
-					</div>
+				<div class="flex-container" id="skills">
 
-
-					<div class="flex-column">
-						<i class="devicon-jquery-plain"></i>
-						<p>jquery</p>
-					</div>
-					<div class="flex-column">
-						<i class="devicon-sass-plain"></i>
-						<p>sass</p>
-					</div>
-					<div class="flex-column">
-						<i class="devicon-bootstrap-plain"></i>
-						<p>bootstrap</p>
-					</div>
-
-					<div class="flex-column">
-						<i class="devicon-react-plain"></i>
-						<p>reactjs</p>
-					</div>
-					<div class="flex-column">
-						<i class="devicon-angularjs-plain"></i>
-						<p>angularjs</p>
-					</div>
-					<div class="flex-column">
-						<i class="devicon-vuejs-plain"></i>
-						<p>vuejs</p>
-					</div>
-
-					<div class="flex-column">
-						<i class="devicon-gulp-plain"></i>
-						<p>gulp</p>
-					</div>
-					<div class="flex-column">
-						<i class="devicon-git-plain"></i>
-						<p>git</p>
-					</div>
-					<div class="flex-column">
-						<i class="devicon-github-plain"></i>
-						<p>github</p>
-					</div>
+					<skill-item
+						v-for="item in skills"
+						v-bind:skill="item"
+						v-bind:key="item.id"
+					></skill-item>
 
 				</div>
 				<!-- skill-icons -->	
@@ -1231,9 +1186,31 @@
 
    <!-- Java Script
    ================================================== --> 
+
+   <!-- adding vueJS library CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+
+
+  
+<script>
+Vue.component('skill-item', {
+  props: ['skill'],
+  template: '<div class="flex-column"><i :class="skill.icon"></i><p>{{ skill.text }}</p></div>'
+})
+
+
+var app = new Vue({
+  el: '#skills',
+  data: {
+    skills: listSkills
+  }
+})
+</script>
+
 
 </body>
 

@@ -299,3 +299,19 @@ var trackClickEvent = function(event,category,label) {
 		//'event_callback': function(){document.location = url;}
 	});
 }
+
+
+const listSkills = [
+	{ icon: 'devicon-html5-plain', text: 'html5' },
+	{ icon: 'devicon-css3-plain', text: 'css3' },
+	{ icon: 'devicon-javascript-plain', text: 'javascript' },
+	{ icon: 'devicon-jquery-plain', text: 'jquery' },
+	{ icon: 'devicon-sass-plain', text: 'sass' },
+	{ icon: 'devicon-bootstrap-plain', text: 'bootstrap' },
+	{ icon: 'devicon-vuejs-plain', text: 'vuejs' },
+	{ icon: 'devicon-react-plain', text: 'reactjs' },
+	{ icon: 'devicon-angularjs-plain', text: 'angularjs' },
+	{ icon: 'devicon-gulp-plain', text: 'gulp' },
+	{ icon: 'devicon-git-plain', text: 'git' },
+	{ icon: 'devicon-github-plain', text: 'github' },
+]
