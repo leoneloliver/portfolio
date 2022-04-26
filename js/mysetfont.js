@@ -95,7 +95,7 @@ if(hasSetfont){
 
         let overlayDiv = document.createElement('DIV');
         overlayDiv.id = "setFont";
-        overlayDiv.innerHTML = `<div id="font-result">close</div>
+        overlayDiv.innerHTML = `<div id="font-result"></div>
         <div class="container-font f_hide">
             <input type="number" id="fontcontrol" id="fontcontrol" min="0" max="100">
             <button id="copyfont">Copy</button>
