@@ -41,6 +41,7 @@ if(hasSetfont){
             font-size: 9px;
             font-weight: 600;
             letter-spacing: 2px;
+            border: 0;
         }
         .inner-result{
             background-color: #323232;
@@ -72,15 +73,14 @@ if(hasSetfont){
             z-index: 9999999999;
             color: #403737;
             width: 25px;
-            bottom: 265px;
-            right: 12px;
+            bottom: 256px;
+            right: 20px;
             padding: 0;
             margin: 0;
             line-height: 10px;
             height: 25px;
             background: #cccccc;
             border-radius: 40px;
-            padding-left: 3px;
             font-size: 12px !important;
         }
         .f_hide{
@@ -93,6 +93,8 @@ if(hasSetfont){
             padding: 12px;
             font-size: 12px !important;
             line-height: 22px;
+            height: 269px;
+            background: #272626;
         }
         button#f_copy {
             position: fixed;
@@ -109,6 +111,9 @@ if(hasSetfont){
             font-weight: 600;
             background: #399f84;
             color: #fff;
+            text-transform: capitalize;
+            border: 0;
+            padding: 0 8px;
         }
         button#f_copy:hover{
             background: #efefef;
