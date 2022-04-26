@@ -68,6 +68,10 @@ if(hasSetfont){
         [data-font] {
             cursor: pointer;	
         }
+        [data-font]:hover {
+            background-color: rgb(248 234 24 / 49%) !important;
+            color: #f9a7bf;
+        }
         #f_close {
             position: fixed;
             z-index: 9999999999;
