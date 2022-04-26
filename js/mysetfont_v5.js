@@ -82,6 +82,7 @@ if(hasSetfont){
             background: #cccccc;
             border-radius: 40px;
             font-size: 12px !important;
+            border: 0;
         }
         .f_hide{
             display:none;
