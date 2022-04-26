@@ -68,9 +68,9 @@ if(hasSetfont){
         [data-font] {
             cursor: pointer;	
         }
-        [data-font]:hover {
+        [data-font]:hover, .f_selected {
             background-color: rgb(248 234 24 / 49%) !important;
-            color: #f9a7bf;
+            color: #f9a7bf !important;
         }
         #f_close {
             position: fixed;
@@ -146,15 +146,28 @@ if(hasSetfont){
 
         const elFont = document.querySelectorAll('[data-font]');
 
+        const squareConteiner = document.querySelector('.container-font');
+        squareConteiner.addEventListener('mouseleave', event => {
+            for(let j = 0; j < elFont.length; j++){
+                elFont[j].classList.remove('f_selected');
+            }
+        });
+
         var currentelement = null;
         for(let i = 0; i < elFont.length; i++){
+            
             elFont[i].addEventListener('click', event => {
-            currentelement = elFont[i];
-            let fontSize = window.getComputedStyle(currentelement).fontSize;
-            let currentFont = fontSize.replace("px", "");
-            document.querySelector('#fontcontrol').value = currentFont;
+                currentelement = elFont[i];
+                let fontSize = window.getComputedStyle(currentelement).fontSize;
+                let currentFont = fontSize.replace("px", "");
+                document.querySelector('#fontcontrol').value = currentFont;
 
-            document.querySelector('.container-font').classList.remove('f_hide');
+                document.querySelector('.container-font').classList.remove('f_hide');
+                for(let j = 0; j < elFont.length; j++){
+                    elFont[j].classList.remove('f_selected');
+                }
+
+                currentelement.classList.add('f_selected')
             });
         }
 
