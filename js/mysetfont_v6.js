@@ -74,7 +74,7 @@ if(hasSetfont){
             color: #403737;
             width: 25px;
             bottom: 256px;
-            right: 20px;
+            right: 38px;
             padding: 0;
             margin: 0;
             line-height: 10px;
@@ -100,8 +100,8 @@ if(hasSetfont){
         button#f_copy {
             position: fixed;
             z-index: 9999999999999;
-            right: 18px;
-            bottom: 58px;
+            right: 42px;
+            bottom: 36px;
             /* width: 12px; */
             padding: 0;
             margin: 0;
