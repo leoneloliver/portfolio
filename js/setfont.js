@@ -9,7 +9,9 @@ var hasSetfont = f_mainUrl.searchParams.get("setfont");
 
 if(hasSetfont){
 
-    console.log('setFont is running!')
+    console.log('setFont is running!');
+
+    alert('set font is ON');
 
     const addStyle = () => {
 
