@@ -11,7 +11,7 @@ if(hasSetfont){
 
     console.log('setFont is running!');
 
-    alert('Setfont tool was turned ON!');
+    alert('Setfont is turned ON!');
 
     const addStyle = () => {
 
