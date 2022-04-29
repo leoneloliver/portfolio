@@ -13,7 +13,7 @@ if(hasSetfont){
 
     alert('Setfont is turned ON!');
 
-    let width = document.body.clientWidth;
+    let screenWidth = document.body.clientWidth;
 
     const addStyle = () => {
 
@@ -190,7 +190,17 @@ if(hasSetfont){
         });
 
         function getAllFonts(){
-            let fontfinal = width+'\r\n';
+
+            let deviceType = "";
+
+            if(screenWidth >= 1200){
+                deviceType = "Desktop";
+            }else if(screenWidth >= 800){
+                deviceType = "Tablet/Ipad";
+            }else{
+                deviceType = "Mobile";
+            }
+            let fontfinal = '[ Device: '+deviceType+' - Screen Width: '+screenWidth+'px ]'+'\r\n';
             for(let i = 0; i < elFont.length; i++){
                 fontfinal += (i+1)+" > "+elFont[i].innerText.substring(0, 20) +' = font-size: '+ window.getComputedStyle(elFont[i]).fontSize +'; line-height: '+ window.getComputedStyle(elFont[i]).lineHeight +';\r\n';
             }
