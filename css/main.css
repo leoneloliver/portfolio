@@ -1016,10 +1016,23 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
 }
-.intro-info img{
+/* .intro-info img{
 	transform: rotate(0deg);
 	transition: all .3s ease;
+} */
+
+.intro-info img{
+	transform: scale(1);
+	transition: transform .5s ease-out;
 }
+
+.zoom{
+	transform: scale(8.125) !important;
+    transition: transform .5s ease-out !important;
+	opacity: 0;
+}
+
+
 .row.section-intro:hover .intro-info img {
     transform: rotate(-40deg);
     transition: all .3s ease;
@@ -1245,6 +1258,7 @@ header .logo a {
 	color: #07d88c;
 }
 
+
 /**
  * responsive:
  * header styles
@@ -1258,6 +1272,11 @@ header .logo a {
 @media only screen and (max-width:768px) {
 	header .top-bar {
 		left: 50px;
+	}
+	.zoom{
+		transform: scale(1) !important;
+		transition: transform .5s ease-out !important;
+		opacity: 0;
 	}
 }
 @media only screen and (max-width:600px) {

@@ -321,3 +321,19 @@ const listSkills = [
 	{ icon: 'devicon-php-plain', text: 'php' },
 	{ icon: 'devicon-mysql-plain', text: 'mysql' },
 ]
+
+function showAlertWhenDivReachesTop() {
+	const myDiv = document.querySelector('.intro-social'); // Replace 'myDiv' with the ID of your target div
+	const avatar = document.querySelector('.intro-info img');
+  
+	const divRect = myDiv.getBoundingClientRect();
+	const isDivAtTop = divRect.top <= 0;
+  
+	if (isDivAtTop) {
+		avatar.classList.remove('zoom');
+	}
+  }
+  
+  // Attach event listener to the scroll event of the window
+  window.addEventListener('scroll', showAlertWhenDivReachesTop);
+  
