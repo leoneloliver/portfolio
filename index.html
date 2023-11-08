@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
 
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131264837-1"></script>
-	
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'UA-131264837-1');
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-131264837-1');
 	</script>
 
 
-   <!--- basic page needs
+	<!--- basic page needs
    ================================================== -->
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 	<title>Leonel - Front End Developer</title>
-	<meta name="description" content="">  
+	<meta name="description" content="">
 	<meta name="author" content="">
-	
-   <!-- mobile specific metas
+
+	<!-- mobile specific metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="theme-color" content="#000000" />
 
- 	<!-- CSS
+	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css"> 
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vendor.css">
 
 	<!-- <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-   <!-- script
-   ================================================== -->   
+	<!-- script
+   ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
-	
 
-   <!-- favicons
+
+	<!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
 
@@ -56,941 +59,1145 @@
 
 	<!-- header 
    ================================================== -->
-   <header>   	
-   	<div class="row-full">
+	<header>
+		<div class="row-full">
 
-   		<div class="row">
-   			
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#" onclick="trackClickEvent('click','topMenuIcon','Open Menu'); return false;"><span>Menu</span></a>
+			<div class="row">
 
-	   		<div class="logo">
-		         
-		    </div>		      
+				<div class="top-bar">
+					<a class="menu-toggle" href="#"
+						onclick="trackClickEvent('click','topMenuIcon','Open Menu'); return false;"><span>Menu</span></a>
 
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="homepage" onclick="trackClickEvent('click','menuLink','Home'); return false;">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="about" onclick="trackClickEvent('click','menuLink','About'); return false;">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="resume" onclick="trackClickEvent('click','menuLink','Resume'); return false;">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="portfolio" onclick="trackClickEvent('click','menuLink','Portfolio'); return false;">Portfolio</a></li>				
-						<li><a class="smoothscroll"  href="#contact" title="contact" onclick="trackClickEvent('click','menuLink','Contact'); return false;">Contact</a></li>				
-					</ul>
-				</nav>    		
-   		</div> <!-- /top-bar --> 
-   		</div>
-   	</div> <!-- /row --> 		
-   </header> <!-- /header -->
+					<div class="logo">
+
+					</div>
+
+					<nav id="main-nav-wrap">
+						<ul class="main-navigation">
+							<li class="current"><a class="smoothscroll" href="#intro" title="homepage"
+									onclick="trackClickEvent('click','menuLink','Home'); return false;">Home</a></li>
+							<li><a class="smoothscroll" href="#about" title="about"
+									onclick="trackClickEvent('click','menuLink','About'); return false;">About</a></li>
+							<li><a class="smoothscroll" href="#resume" title="resume"
+									onclick="trackClickEvent('click','menuLink','Resume'); return false;">Resume</a>
+							</li>
+							<li><a class="smoothscroll" href="#projects" title="projects"
+									onclick="trackClickEvent('click','menuLink','Projects'); return false;">Projects</a>
+							</li>
+							<li><a class="smoothscroll" href="#portfolio" title="portfolio"
+									onclick="trackClickEvent('click','menuLink','Portfolio'); return false;">Portfolio</a>
+							</li>
+							<li><a class="smoothscroll" href="#contact" title="contact"
+									onclick="trackClickEvent('click','menuLink','Contact'); return false;">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div> <!-- /top-bar -->
+			</div>
+		</div> <!-- /row -->
+	</header> <!-- /header -->
 
 	<!-- intro section
    ================================================== -->
-   <section id="intro">   
+	<section id="intro">
 
-   	<div class="intro-overlay"></div>	
+		<div class="intro-overlay"></div>
 
-   	<div class="intro-content">
-   		<div class="row">
+		<div class="intro-content">
+			<div class="row">
 
-   			<div class="col-twelve">
+				<div class="col-twelve">
 
-	   			<h5 data-font>Hello, World.</h5>
-	   			<h1 class="text-colorful" data-font>I'm Leonel <i class="fa fa-code"></i></h1>
+					<h5 data-font>Hello, World.</h5>
+					<h1 class="text-colorful" data-font>I'm Leonel <i class="fa fa-code"></i></h1>
 
-	   			<p class="intro-position">
-	   				<span data-font>Front-end Developer</span>
-	   				<!-- <span>UI/UX Designer</span>  -->
-	   			</p>
+					<p class="intro-position">
+						<span data-font>Front-end Developer</span>
+						<!-- <span>UI/UX Designer</span>  -->
+					</p>
 
-	   			<a class="button stroke smoothscroll" href="#about" title="More about Me" onclick="trackClickEvent('click','btn','More About Me'); return false;">More About Me</a>
-
-	   		</div>  
-   			
-   		</div>   		 		
-   	</div> <!-- /intro-content --> 
-
-   	<ul class="intro-social">
-   		 <li><a href="https://github.com/leoneloliver" onclick="trackClickEvent('click','SocialIconTop','github');"><i class="fa fa-github"></i></a></li>  
-         <li><a href="https://www.linkedin.com/in/leonel-oliveira/" onclick="trackClickEvent('click','SocialIconTop','linkedin');"><i class="fa fa-linkedin"></i></a></li>
-         <li><a href="https://www.instagram.com/leoneloliver/" onclick="trackClickEvent('click','SocialIconTop','instagram');"><i class="fa fa-instagram"></i></a></li>
-         <!-- <li><a href="https://twitter.com/leoneloliver"><i class="fa fa-twitter"></i></a></li> -->
-      </ul> <!-- /intro-social -->      	
-
-   </section> <!-- /intro -->
-
-
-   <!-- about section
-   ================================================== -->
-   <section id="about">  
-
-   	<div class="row section-intro">
-   		<div class="col-twelve" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
-
-   			<h5 data-font>About</h5>
-   			<h1 data-font>Let me introduce myself.</h1>
-
-   			<div class="intro-info">
-
-   				<img src="images/profile-pic.jpg" alt="Profile Picture" class="zoom">
-
-   				<p class="lead" data-font>I am a front-end developer based in Toronto. I love creating interesting UI/UX and solving complex coding problems. I love working within a team or heading off into the unknown and working on personal projects and ideas.</p>
-   				
-   			</div>   			
-
-   		</div>   		
-   	</div> <!-- /section-intro -->
-
-   	<div class="row about-content">
-
-   		<div class="col-six tab-full" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine">
-
-   			<h3 data-font>Skills</h3>
-   			
-   			<p>Experience in Front-end web application development with strong understanding of Responsive Design, HTML5 semantics, CSS3 (Flexbox / CSS Grid), Single-page web-apps and frameworks (Tailwind, Bootstrap and Material Design) as well CSS preprocessing (SASS/SCSS) and SMACSS/BEM methodology. Working with ReactJS, NextJS, Git, GitHub, Bitbucket, NPM, PHP and MySQL.</p>
-   			<p>Understanding the intricacies of how JS and CSS impact rendering (web performance culture).</p>
-			<p>Layout with HTML/CSS/SASS, Styled Components, Storybook.</p>
-			<p>React (Hooks, Context, etc), React Router.</p>
-   			<p>NextJS (Server Side Render, Incremental Static Regeneration and Static Site Generator).</p>
-			<p>JavaScript best practices and E2E testing with Cypress.</p>
-   			<p>Excellent working attitude, responsible and dedicated.</p>
-   			<!-- <p>Passionate for Internet Technology, LEGO Geek and Rubik's cube Solver.</p>
-   			<p>I am ready to go a step further in my career and be part of something big to build next-generation web applications.</p> -->
-   			
-   		</div>
-
-   		<div class="col-six tab-full">
-
-				<ul class="skill-bars hidden">
-				   <li>
-				   	<div class="progress percent100"><span>100%</span></div>
-				   	<strong>HTML5</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent100"><span>100%</span></div>
-				   	<strong>CSS3</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>Javascript</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>100%</span></div>
-				   	<strong>JQuery</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent80"><span>90%</span></div>
-				   	<strong>SASS</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>100%</span></div>
-				   	<strong>Bootstrap</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent45"><span>80%</span></div>
-				   	<strong>ReactJS</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent40"><span>40%</span></div>
-				   	<strong>AngularJS</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent40"><span>40%</span></div>
-				   	<strong>VueJS</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>Git</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent100"><span>100%</span></div>
-				   	<strong>Github</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>Gulp</strong>
-				   </li>
-				   
-				  
-				</ul> <!-- /skill-bars -->	
-					
-				<!-- Vue skill-icons -->	
-				<div class="flex-container" id="skills"  data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
-
-					<skill-item
-						v-for="item in skills"
-						v-bind:skill="item"
-						v-bind:key="item.id"
-					></skill-item>
+					<a class="button stroke smoothscroll" href="#about" title="More about Me"
+						onclick="trackClickEvent('click','btn','More About Me'); return false;">More About Me</a>
 
 				</div>
-				<!-- Vue skill-icons -->	
+
+			</div>
+		</div> <!-- /intro-content -->
+
+		<ul class="intro-social">
+			<li><a href="https://github.com/leoneloliver"
+					onclick="trackClickEvent('click','SocialIconTop','github');"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/leonel-oliveira/"
+					onclick="trackClickEvent('click','SocialIconTop','linkedin');"><i class="fa fa-linkedin"></i></a>
+			</li>
+			<li><a href="https://www.instagram.com/leoneloliver/"
+					onclick="trackClickEvent('click','SocialIconTop','instagram');"><i class="fa fa-instagram"></i></a>
+			</li>
+			<!-- <li><a href="https://twitter.com/leoneloliver"><i class="fa fa-twitter"></i></a></li> -->
+		</ul> <!-- /intro-social -->
+
+	</section> <!-- /intro -->
 
 
-   		</div>
+	<!-- about section
+   ================================================== -->
+	<section id="about">
 
-   	</div>
+		<div class="row section-intro">
+			<div class="col-twelve" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
 
-   	<div class="row button-section">
-   		<div class="col-twelve">
-   			<a data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" href="#contact" title="Hire Me" class="button stroke smoothscroll" onclick="trackClickEvent('click','btn','Hire Me'); return false;">Hire Me</a>
-   			<a data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" href="Leonel-Frontend-2023.pdf" title="Download Resume" class="button button-primary" onclick="trackClickEvent('click','btn','Download Resume');">Download Resume</a>
-   		</div>   		
-   	</div>
+				<h5 data-font>About</h5>
+				<h1 data-font>Let me introduce myself.</h1>
 
-   </section> <!-- /process-->    
+				<div class="intro-info">
 
-   
+					<img src="images/profile-pic.jpg" alt="Profile Picture" class="zoom">
 
-   <!-- resume Section
+					<p class="lead" data-font>I am a front-end developer based in Toronto. I love creating interesting
+						UI/UX and solving complex coding problems. I love working within a team or heading off into the
+						unknown and working on personal projects and ideas.</p>
+
+				</div>
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row about-content">
+
+			<div class="col-six tab-full" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine">
+
+				<h3 data-font>Skills</h3>
+
+				<p>Experience in Front-end web application development with strong understanding of Responsive Design,
+					HTML5 semantics, CSS3 (Flexbox / CSS Grid), Single-page web-apps and frameworks (Tailwind, Bootstrap
+					and Material Design) as well CSS preprocessing (SASS/SCSS) and SMACSS/BEM methodology. Working with
+					ReactJS, NextJS, Git, GitHub, Bitbucket, NPM, PHP and MySQL.</p>
+				<p>Understanding the intricacies of how JS and CSS impact rendering (web performance culture).</p>
+				<p>Layout with HTML/CSS/SASS, Styled Components, Storybook.</p>
+				<p>React (Hooks, Context, etc), React Router.</p>
+				<p>NextJS (Server Side Render, Incremental Static Regeneration and Static Site Generator).</p>
+				<p>JavaScript best practices and E2E testing with Cypress.</p>
+				<p>Excellent working attitude, responsible and dedicated.</p>
+				<!-- <p>Passionate for Internet Technology, LEGO Geek and Rubik's cube Solver.</p>
+   			<p>I am ready to go a step further in my career and be part of something big to build next-generation web applications.</p> -->
+
+			</div>
+
+			<div class="col-six tab-full">
+
+				<ul class="skill-bars hidden">
+					<li>
+						<div class="progress percent100"><span>100%</span></div>
+						<strong>HTML5</strong>
+					</li>
+					<li>
+						<div class="progress percent100"><span>100%</span></div>
+						<strong>CSS3</strong>
+					</li>
+					<li>
+						<div class="progress percent90"><span>90%</span></div>
+						<strong>Javascript</strong>
+					</li>
+					<li>
+						<div class="progress percent95"><span>100%</span></div>
+						<strong>JQuery</strong>
+					</li>
+					<li>
+						<div class="progress percent80"><span>90%</span></div>
+						<strong>SASS</strong>
+					</li>
+					<li>
+						<div class="progress percent95"><span>100%</span></div>
+						<strong>Bootstrap</strong>
+					</li>
+					<li>
+						<div class="progress percent45"><span>80%</span></div>
+						<strong>ReactJS</strong>
+					</li>
+					<li>
+						<div class="progress percent40"><span>40%</span></div>
+						<strong>AngularJS</strong>
+					</li>
+					<li>
+						<div class="progress percent40"><span>40%</span></div>
+						<strong>VueJS</strong>
+					</li>
+					<li>
+						<div class="progress percent90"><span>90%</span></div>
+						<strong>Git</strong>
+					</li>
+					<li>
+						<div class="progress percent100"><span>100%</span></div>
+						<strong>Github</strong>
+					</li>
+					<li>
+						<div class="progress percent90"><span>90%</span></div>
+						<strong>Gulp</strong>
+					</li>
+
+
+				</ul> <!-- /skill-bars -->
+
+				<!-- Vue skill-icons -->
+				<div class="flex-container" id="skills" data-aos="fade-left" data-aos-offset="500"
+					data-aos-easing="ease-in-sine">
+
+					<skill-item v-for="item in skills" v-bind:skill="item" v-bind:key="item.id"></skill-item>
+
+				</div>
+				<!-- Vue skill-icons -->
+
+
+			</div>
+
+		</div>
+
+		<div class="row button-section">
+			<div class="col-twelve">
+				<a data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" href="#contact"
+					title="Hire Me" class="button stroke smoothscroll"
+					onclick="trackClickEvent('click','btn','Hire Me'); return false;">Hire Me</a>
+				<a data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine"
+					href="Leonel-Frontend-2023.pdf" title="Download Resume" class="button button-primary"
+					onclick="trackClickEvent('click','btn','Download Resume');">Download Resume</a>
+			</div>
+		</div>
+
+	</section> <!-- /process-->
+
+
+
+	<!-- resume Section
    ================================================== -->
 	<section id="resume" class="grey-section">
 
-   	<div class="row resume-timeline">
+		<div class="row resume-timeline">
 
-   		<div class="col-twelve resume-header">
+			<div class="col-twelve resume-header">
 
-   			<h2 data-font>Work Experience</h2>
+				<h2 data-font>Work Experience</h2>
 
-   		</div> <!-- /resume-header -->
+			</div> <!-- /resume-header -->
 
-   		<div class="col-twelve">
+			<div class="col-twelve">
 
-   			<div class="timeline-wrap">
+				<div class="timeline-wrap">
 
-				<div class="timeline-block" data-aos="fade-up">
+					<div class="timeline-block" data-aos="fade-up">
 
-					<div class="timeline-ico">
-						<i class="fa fa-briefcase"></i>
-					</div>
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-					<div class="timeline-header">
-						<h3>Front End Developer</h3>
-						<p>Mar 2022 - Present</p>
-					
-					</div>
+						<div class="timeline-header">
+							<h3>Front End Developer</h3>
+							<p>Mar 2022 - Present</p>
 
-					<div class="timeline-content">
-						<h4>VolarisGroup</h4>
-						<p>Responsible for developing the new landing pages system management. Migrating from the legacy codebase (Expression Engine) to Craft CMS as Headless CMS. Creating/Developing UI components based on TailWind and Headless UI (Experience with AODA compliance and best practices). Developing endpoints using elementAPI on Backend and connecting the Restfull API's on the frontend working with dynamic routes using React and Nextjs Server Side Render and Incremental Static Regeneration. Resposible for E2E testing with Cypress and involved in the full product life cycle (ideation, planning, delivering).</p>
-					</div>
+						</div>
 
-				</div> <!-- /timeline-block -->
+						<div class="timeline-content">
+							<h4>VolarisGroup</h4>
+							<p>Responsible for developing the new landing pages system management. Migrating from the
+								legacy codebase (Expression Engine) to Craft CMS as Headless CMS. Creating/Developing UI
+								components based on TailWind and Headless UI (Experience with AODA compliance and best
+								practices). Developing endpoints using elementAPI on Backend and connecting the Restfull
+								API's on the frontend working with dynamic routes using React and Nextjs Server Side
+								Render and Incremental Static Regeneration. Resposible for E2E testing with Cypress and
+								involved in the full product life cycle (ideation, planning, delivering).</p>
+						</div>
 
+					</div> <!-- /timeline-block -->
 
-				<div class="timeline-block" data-aos="fade-up">
 
-					<div class="timeline-ico">
-						<i class="fa fa-briefcase"></i>
-					</div>
+					<div class="timeline-block" data-aos="fade-up">
 
-					<div class="timeline-header">
-						<h3>Front End Developer</h3>
-						<p>Mar 2021 - Mar 2022</p>
-					
-					</div>
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-					<div class="timeline-content">
-						<h4>Klick Health</h4>
-						<p>Responsible for developing web applications that are responsive, performant, and accessible that engage audiences through complex interactions. Building reusable components with HTML, CSS, and JavaScript for use across large-scale and documenting them in our style guides. Working with tools such as AEM, Marketo(modular template email), Litmus, Uberflip, Hubspot etc...</p>
-					</div>
+						<div class="timeline-header">
+							<h3>Front End Developer</h3>
+							<p>Mar 2021 - Mar 2022</p>
 
-				</div> <!-- /timeline-block -->
+						</div>
 
-				<div class="timeline-block" data-aos="fade-left">
+						<div class="timeline-content">
+							<h4>Klick Health</h4>
+							<p>Responsible for developing web applications that are responsive, performant, and
+								accessible that engage audiences through complex interactions. Building reusable
+								components with HTML, CSS, and JavaScript for use across large-scale and documenting
+								them in our style guides. Working with tools such as AEM, Marketo(modular template
+								email), Litmus, Uberflip, Hubspot etc...</p>
+						</div>
 
-					<div class="timeline-ico">
-						<i class="fa fa-briefcase"></i>
-					</div>
+					</div> <!-- /timeline-block -->
 
-					<div class="timeline-header">
-						<h3>Front End Developer</h3>
-						<p>Jan 2020 - Mar 2021</p>
-					
-					</div>
+					<div class="timeline-block" data-aos="fade-left">
 
-					<div class="timeline-content">
-						<h4>DMZ - Ryerson University</h4>
-						<p>Responsibility of building new features for the PHP based CMS, identifying and investigating new technologies to improve UX, prototype solutions, improving software performance and launching the user interface, testing and reviewing changes, to deliver an exceptional customer experience for the main web platform.</p>
-					</div>
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-				</div> <!-- /timeline-block -->
+						<div class="timeline-header">
+							<h3>Front End Developer</h3>
+							<p>Jan 2020 - Mar 2021</p>
 
+						</div>
 
-				<div class="timeline-block" data-aos="fade-down">
+						<div class="timeline-content">
+							<h4>DMZ - Ryerson University</h4>
+							<p>Responsibility of building new features for the PHP based CMS, identifying and
+								investigating new technologies to improve UX, prototype solutions, improving software
+								performance and launching the user interface, testing and reviewing changes, to deliver
+								an exceptional customer experience for the main web platform.</p>
+						</div>
 
-					<div class="timeline-ico">
-						<i class="fa fa-briefcase"></i>
-					</div>
+					</div> <!-- /timeline-block -->
 
-					<div class="timeline-header">
-						<h3>Front End Developer</h3>
-						<p>Dec 2018 - Jan 2020</p>
-					
-					</div>
 
-					<div class="timeline-content">
-						<h4>Merchant Growth</h4>
-						<p>Contributing on Front End Web App Application Development. Developing and implementing a modern React.js, JavaScript, HTML5, CSS3 platform and experience using API's. Designing and implementing reusable web UI components. Collaborating in an Agile environment to develop amazing product for a startup Fintech.</p>
-					</div>
+					<div class="timeline-block" data-aos="fade-down">
 
-				</div> <!-- /timeline-block -->
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-   				<div class="timeline-block" data-aos="fade-right">
+						<div class="timeline-header">
+							<h3>Front End Developer</h3>
+							<p>Dec 2018 - Jan 2020</p>
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
+						</div>
 
-	   				<div class="timeline-header">
-	   					<h3>Front End Developer</h3>
-	   					<p>Jan 2017 – Dec 2018</p>
-	   				
-	   				</div>
+						<div class="timeline-content">
+							<h4>Merchant Growth</h4>
+							<p>Contributing on Front End Web App Application Development. Developing and implementing a
+								modern React.js, JavaScript, HTML5, CSS3 platform and experience using API's. Designing
+								and implementing reusable web UI components. Collaborating in an Agile environment to
+								develop amazing product for a startup Fintech.</p>
+						</div>
 
-	   				<div class="timeline-content">
-	   					<h4>onResearch Inc</h4>
-	   					<p>Developing core UI components for a fast, scalable and complex Survey & Data Collection App using JavaScript, HTML5, and CSS3. Designing compelling and interactive interfaces using technologies such as CSS pre-processing frameworks (SASS, LESS, etc), Data Visualization, integration with RESTful APIs and middle-tier code. Expertise with Software design/architecture process.</p>
-	   				</div>
+					</div> <!-- /timeline-block -->
 
-	   			</div> <!-- /timeline-block -->
+					<div class="timeline-block" data-aos="fade-right">
 
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-	   			<div class="timeline-block" data-aos="fade-left">
+						<div class="timeline-header">
+							<h3>Front End Developer</h3>
+							<p>Jan 2017 – Dec 2018</p>
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
+						</div>
 
-	   				<div class="timeline-header">
-	   					<h3>Front End Developer</h3>
-	   					<p>May 2015 - Jan 2017</p>
-	   				</div>
+						<div class="timeline-content">
+							<h4>onResearch Inc</h4>
+							<p>Developing core UI components for a fast, scalable and complex Survey & Data Collection
+								App using JavaScript, HTML5, and CSS3. Designing compelling and interactive interfaces
+								using technologies such as CSS pre-processing frameworks (SASS, LESS, etc), Data
+								Visualization, integration with RESTful APIs and middle-tier code. Expertise with
+								Software design/architecture process.</p>
+						</div>
 
-	   				<div class="timeline-content">
-	   					<h4>Codepxl</h4>
-	   					<p>Develop optimized web templates and supporting content for a PHP-based Ecommerce Management System Platform.
-							Design and code landing pages within internal CMS as required.
-							Develop/design email templates and supporting content.
-							knowledge of HTML5, CSS3 (LESS, SASS), JavaScript (AJAX, jQuery).
-							Exposure to grid frameworks and responsive design.
-							Working knowledge of email marketing platform (MailChimp) and graphic design software such as Adobe Photoshop.
-							Understanding of database design structures and SQL.</p>
-	   				</div>
+					</div> <!-- /timeline-block -->
 
-	   			</div> <!-- /timeline-block -->
 
-   			</div> <!-- /timeline-wrap -->   			
+					<div class="timeline-block" data-aos="fade-left">
 
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-   	
-   	<div class="row resume-timeline">
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-   		<div class="col-twelve resume-header">
+						<div class="timeline-header">
+							<h3>Front End Developer</h3>
+							<p>May 2015 - Jan 2017</p>
+						</div>
 
-   			<h2>Education</h2>
+						<div class="timeline-content">
+							<h4>Codepxl</h4>
+							<p>Develop optimized web templates and supporting content for a PHP-based Ecommerce
+								Management System Platform.
+								Design and code landing pages within internal CMS as required.
+								Develop/design email templates and supporting content.
+								knowledge of HTML5, CSS3 (LESS, SASS), JavaScript (AJAX, jQuery).
+								Exposure to grid frameworks and responsive design.
+								Working knowledge of email marketing platform (MailChimp) and graphic design software
+								such as Adobe Photoshop.
+								Understanding of database design structures and SQL.</p>
+						</div>
 
-   		</div> <!-- /resume-header -->
+					</div> <!-- /timeline-block -->
 
-   		<div class="col-twelve">
+				</div> <!-- /timeline-wrap -->
 
-   			<div class="timeline-wrap">
+			</div> <!-- /col-twelve -->
 
-   				<div class="timeline-block" data-aos="fade-up">
+		</div> <!-- /resume-timeline -->
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
+		<div class="row resume-timeline">
 
-	   				<div class="timeline-header">
-	   					<h3>HackerYou</h3>
-	   					<p>2017 - 2018</p>
-	   				</div>
+			<div class="col-twelve resume-header">
 
-	   				<div class="timeline-content">
-	   					<h4>Advanced Web Development Fundamentals</h4>
-	   					<p>HTML5, CSS3, Precompiled syntaxes such as Sass, Website accessibility practices, Responsive Web Design, Introductory JavaScript & jQuery.<br><a href="https://hackeryou.com/courses/accelerated-web-development" target="_blank">[Read More]</a></p>
-	   				</div>
+				<h2>Education</h2>
 
-	   			</div> <!-- /timeline-block -->
+			</div> <!-- /resume-header -->
 
+			<div class="col-twelve">
 
+				<div class="timeline-wrap">
 
-   				<div class="timeline-block" data-aos="fade-left">
+					<div class="timeline-block" data-aos="fade-up">
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
 
-	   				<div class="timeline-header">
-	   					<h3>University of Toronto</h3>
-	   					<p>2017 - 2017</p>
-	   				</div>
+						<div class="timeline-header">
+							<h3>HackerYou</h3>
+							<p>2017 - 2018</p>
+						</div>
 
-	   				<div class="timeline-content">
-	   					<h4>Continuing Education</h4>
-						<p>Web and Mobile Development with Single Page Application Architecture.<br><a href="https://learn.utoronto.ca/programs-courses/courses/3704-web-development-using-react-and-jsx" target="_blank">[Read More]</a></p>
-	   					<!-- <p>Web and Mobile Development with Single Page Application Architecture.<br><a href="https://learn.utoronto.ca/programs-courses/courses/3407-web-and-mobile-development-single-page-application-architecture" target="_blank">[Read More]</a></p> -->
-	   				</div>
+						<div class="timeline-content">
+							<h4>Advanced Web Development Fundamentals</h4>
+							<p>HTML5, CSS3, Precompiled syntaxes such as Sass, Website accessibility practices,
+								Responsive Web Design, Introductory JavaScript & jQuery.<br><a
+									href="https://junocollege.com/bootcamp/part-time-web-development/"
+									target="_blank">[Read More]</a></p>
+						</div>
 
-	   			</div> <!-- /timeline-block -->
-   			
-	   			
+					</div> <!-- /timeline-block -->
 
-	   			<div class="timeline-block" data-aos="fade-down">
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
 
-	   				<div class="timeline-header">
-	   					<h3>FIAP (Sao Paulo)</h3>
-	   					<p>2009 – 2013</p>
-	   				</div>
+					<div class="timeline-block" data-aos="fade-left">
 
-	   				<div class="timeline-content">
-	   					<h4>College Graduate Certificate (Diploma)</h4>
-	   					<p>Internet Systems Technology and Web Applications<br>
-						<a target="_blank" href="https://badges.wes.org/Evidence?i=b518c866-76e7-4851-91d8-fe75783ccd67&type=ca">[Verified]</a>
-						</p>
-	   				</div>
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
 
-	   			</div> <!-- /timeline-block -->
+						<div class="timeline-header">
+							<h3>University of Toronto</h3>
+							<p>2017 - 2017</p>
+						</div>
 
-   			</div> <!-- /timeline-wrap -->   			
+						<div class="timeline-content">
+							<h4>Continuing Education</h4>
+							<p>Web and Mobile Development with Single Page Application Architecture.<br><a
+									href="https://learn.utoronto.ca/programs-courses/courses/3704-web-development-using-react-and-jsx"
+									target="_blank">[Read More]</a></p>
+							<!-- <p>Web and Mobile Development with Single Page Application Architecture.<br><a href="https://learn.utoronto.ca/programs-courses/courses/3407-web-and-mobile-development-single-page-application-architecture" target="_blank">[Read More]</a></p> -->
+						</div>
 
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-	
+					</div> <!-- /timeline-block -->
+
+
+
+					<div class="timeline-block" data-aos="fade-down">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>FIAP (Sao Paulo)</h3>
+							<p>2009 – 2013</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>College Graduate Certificate (Diploma)</h4>
+							<p>Internet Systems Technology and Web Applications<br>
+								<a target="_blank"
+									href="https://badges.wes.org/Evidence?i=b518c866-76e7-4851-91d8-fe75783ccd67&type=ca">[Verified]</a>
+							</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+				</div> <!-- /timeline-wrap -->
+
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /resume-timeline -->
+
 	</section> <!-- /features -->
+
+
+
+
+	<section id="projects">
+
+		<div class="row section-projects tab-full">
+
+
+			<div class="row section-intro mb-80">
+				<div class="col-twelve">
+
+					<h5>Latest Projects</h5>
+					<h1>Projects I want to share</h1>
+
+
+				</div>
+			</div>
+
+			<div class="col-twelve aos-init aos-animate">
+
+
+				<div data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine">
+
+
+					<h3>Eventbrite Clone</h3>
+					<p>Responsive application allows users to browse, search and create events, users are able to login
+						using a google email.</p>
+					<p><strong>Technologies:</strong> React, TypeScript, Firebase, Firebase Auth, Tailwind</p>
+
+					<p><strong>Live:</strong> <a target="_blank"
+							href="https://eventbrite-firebase.vercel.app/">https://eventbrite-firebase.vercel.app/</a>
+					</p>
+					<p><strong>Repo:</strong> <a target="_blank"
+							href="https://github.com/leoneloliver/eventbrite">https://github.com/leoneloliver/eventbrite</a>
+					</p>
+					<br>
+
+
+				</div>
+
+
+				<div data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine">
+
+					<h3>Woot Clone (amazon subsidiary)</h3>
+					<p>Responsive Commerce platform, list of products, search bar, organized by category. Users are able
+						to
+						list product, see more details and add or remove products from the shopping cart etc.</p>
+					<p><strong>Technologies:</strong> React, NextJS, GraphQL, Tailwind, Contentful CMS</p>
+
+					<p><strong>Live:</strong> <a href="https://woot.vercel.app/"
+							target="_blank">https://woot.vercel.app/</a></p>
+					<p><strong>Repo:</strong> <a href="https://github.com/leoneloliver/woot"
+							target="_blank">https://github.com/leoneloliver/woot</a></p>
+					<br>
+				</div>
+
+
+
+				<div data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine">
+
+					<h3>Explanatory videos:</h3>
+					<p>On my journey learning rails I decided to make two videos on how a simple (full stack)
+						application
+						works, running everything in SaaS (cloud) without installing local tools (made simple as it is a
+						learning purpose). I created a Rails backend within <i>Replit</i> that provides an endpoint for
+						the
+						frontend in React running on <i>CodeSandBox</i>.</p>
+					<p><strong>Video: Ruby On Rails and React Application - Part 01 (Backend)</strong></p>
+					<p><a href="https://www.youtube.com/watch?v=3TU27zH-0p8"
+							target="_blank">https://www.youtube.com/watch?v=3TU27zH-0p8</a>
+					</p>
+					<p><strong>Video: Ruby On Rails and React Application - Part 02 (Frontend)</strong></p>
+					<p><a href="https://www.youtube.com/watch?v=qs0A8V3ruDE"
+							target="_blank">https://www.youtube.com/watch?v=qs0A8V3ruDE</a>
+					</p>
+					<br>
+
+					<p><strong>Code: Rails Backend Project on Replit</strong></p>
+					<p><a href="https://replit.com/@leoneloliver/recipesapp#app/controllers/recipes_controller.rb"
+							target="_blank">https://replit.com/@leoneloliver/recipesapp#app/controllers/recipes_controller.rb</a>
+					</p>
+
+
+					<p><strong>Code: React Frontend Project on CodeSandBox</strong></p>
+					<p><a href="https://codesandbox.io/s/recipesapp-dyrz9y?file=/src/RecipeList.js"
+							target="_blank">https://codesandbox.io/s/recipesapp-dyrz9y?file=/src/RecipeList.js</a>
+					</p>
+
+				</div>
+
+
+			</div>
+		</div>
+
+	</section>
 
 	<!-- Portfolio Section
    ================================================== -->
 	<section id="portfolio">
 
 		<div class="row section-intro">
-   		<div class="col-twelve">
+			<div class="col-twelve">
 
-   			<h5>Portfolio</h5>
-   			<h1>Check Out Some of My Works.</h1>
+				<h5>Portfolio</h5>
+				<h1>Check Out Some of My Works.</h1>
 
-   			<p class="lead">I love to do amazing stuff.</p>
+				<p class="lead">I love to do amazing stuff.</p>
 
-   		</div>   		
-   	</div> <!-- /section-intro--> 
+			</div>
+		</div> <!-- /section-intro-->
 
-   	<div class="row portfolio-content">
+		<div class="row portfolio-content">
 
-   		<div class="col-twelve">
-   			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-
-				
-				<div class="bgrid folio-item" data-aos="fade-up">
-                    <div class="item-wrap">
-                        <img src="images/shopify-app.png" alt="Shopify Clone App">
-                       <a href="https://shopifycloneapp.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Shopify Clone');">                                
-                          <div class="folio-item-table">
-                              <div class="folio-item-cell">
-                                         <h3 class="folio-title">Shopify Clone</h3>                             
-                                           <span class="folio-types">
-                                               ReactJs, Hooks, HTML, CSS and JavaScript.
-                                         </span>
-                                     </div>                         
-                          </div>                    
-                       </a>
-                    </div>                 
-                </div> <!-- /folio-item -->
-
-				<div class="bgrid folio-item" data-aos="fade-left">
-                    <div class="item-wrap">
-                        <img src="images/movietube-app.png" alt="MovieTube App">
-                       <a href="https://movietube.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','MovieTube APP');">                                
-                          <div class="folio-item-table">
-                              <div class="folio-item-cell">
-                                         <h3 class="folio-title">MovieTube APP</h3>                             
-                                           <span class="folio-types">
-                                               ReactJs, imdb APP, axios, Hooks, HTML, CSS and JavaScript.
-                                         </span>
-                                     </div>                         
-                          </div>                    
-                       </a>
-                    </div>                 
-                </div> <!-- /folio-item -->
-
-			
-
-				<div class="bgrid folio-item" data-aos="fade-right">
-					<div class="item-wrap">
-					 <img src="./images/airbnb-app.png" alt="airBnB APP">
-					 <a href="https://clonebnb.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','airBnB Clone');">                                        
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">airBnB clone-APP</h3>                               
-										 <span class="folio-types">
-										  ReactJS, Hooks, Javascript, HTML, CSS and Responsive design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
+			<div class="col-twelve">
+				<!-- portfolio-wrapper -->
+				<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
 
 
-				<div class="bgrid folio-item" data-aos="fade-up">
-					<div class="item-wrap">
-					 <img src="./images/eventbrite-clone.png" alt="Eventbrite APP">
-					 <a href="https://eventbrite-firebase.vercel.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Eventbrite Clone');">                                        
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Eventbrite clone</h3>                               
-										 <span class="folio-types">
-										  ReactJS, Firebase, TypeScript, TailWindCSS, HTML, CSS and Responsive Design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
-
-
-				<div class="bgrid folio-item" data-aos="fade-down">
-                    <div class="item-wrap">
-                        <img src="images/twitter.png" alt="Twitter Clone App">
-                       <a href="https://vuetter-clone.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Twitter Clone');">                                
-                          <div class="folio-item-table">
-                              <div class="folio-item-cell">
-                                         <h3 class="folio-title">Twitter UI Clone</h3>                             
-                                           <span class="folio-types">
-                                               VueJS, TailWind css, HTML and JavaScript.
-                                         </span>
-                                     </div>                         
-                          </div>                    
-                       </a>
-                    </div>                 
-                </div> <!-- /folio-item -->
-				
-
-				<div class="bgrid folio-item" data-aos="fade-up">
-                    <div class="item-wrap">
-                        <img src="images/find-git.png" alt="Shopping list App">
-                       <a href="https://findgit.vercel.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Find GitHub');">                                
-                          <div class="folio-item-table">
-                              <div class="folio-item-cell">
-                                         <h3 class="folio-title">Find GitHub Users</h3>                             
-                                           <span class="folio-types">
-                                               ReactJs, Hooks, HTML, CSS and JavaScript.
-                                         </span>
-                                     </div>                         
-                          </div>                    
-                       </a>
-                    </div>                 
-                </div> <!-- /folio-item -->
-
-				<div class="bgrid folio-item" data-aos="fade-right">
-					<div class="item-wrap">
-					 <img src="images/ebay-clone.png" alt="Ebay Clone">
-					 <a href="https://ebayapp.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Ebay Clone');">                                     
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Ebay Clone - Interface</h3>                             
-										 <span class="folio-types">
-										   Javascript, ReactJS, HTML5, CSS3, Responsive design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
-
-
-				<div class="bgrid folio-item" data-aos="fade-left">
-					<div class="item-wrap">
-					 <img src="https://leonel.netlify.com/portfolio/cyalive.png" alt="CyaLive Clone">
-					   <a href="https://cyalive.netlify.com/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Cyalive');">
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">CyaLive Clone</h3>                              
-										 <span class="folio-types">
-										   React and Responsive design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->   
-
-				<div class="bgrid folio-item" data-aos="fade-down">
-					<div class="item-wrap">
-						<img src="images/shopping-list.png" alt="Shopping list App">
-					   <a href="https://market-listing.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Shopping List');">                                
-						  <div class="folio-item-table">
-							  <div class="folio-item-cell">
-										 <h3 class="folio-title">Shopping List</h3>                             
-										   	<span class="folio-types">
-											   ReactJs, Hooks, HTML, CSS and JavaScript.
-										 	</span>
-									 </div>                         
-						  </div>                    
-					   </a>
-					</div>                 
-				</div> <!-- /folio-item -->
-
-
-				<div class="bgrid folio-item" data-aos="fade-up">
-					<div class="item-wrap">
-					 <img src="https://flickrapp.netlify.com/images/bg-banner.jpg" alt="Flickr App">
-					   <a href="https://flickrapp.netlify.com/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Flickr App');">                                  
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-										<h3 class="folio-title">Flickr App</h3>                              
-										  <span class="folio-types">
-										   ReactJs, HTML, CSS and flickr API.
+					<div class="bgrid folio-item" data-aos="fade-down">
+						<div class="item-wrap">
+							<img src="images/woot_app.png" alt="Woot Clone Ecommerce">
+							<a href="https://woot.vercel.app/" class="overlay" rel="noopener noreferrer" target="_blank"
+								onclick="trackClickEvent('click','portfolioProject','Woot Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Woot Clone</h3>
+										<span class="folio-types">
+											React, NextJS, GraphQL, Tailwind, Contentful CMS.
 										</span>
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>                  
-				</div> <!-- /folio-item -->
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-				<div class="bgrid folio-item" data-aos="fade-right">
-                    <div class="item-wrap">
-                        <img src="images/yelp.png" alt="Yelp Clone App">
-                       <a href="https://yelpclone-app.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Yelp Clone');">                                 
-                          <div class="folio-item-table">
-                              <div class="folio-item-cell">
-                                         <h3 class="folio-title">Yelp Clone</h3>                                
-                                           <span class="folio-types">
-                                               ReactJs, Yelp API, HTML, CSS and JavaScript.
-                                         </span>
-                                     </div>                         
-                          </div>                    
-                       </a>
-                    </div>                 
-                </div> <!-- /folio-item -->
+					<div class="bgrid folio-item" data-aos="fade-up">
+						<div class="item-wrap">
+							<img src="./images/eventbrite-clone.png" alt="Eventbrite APP">
+							<a href="https://eventbrite-firebase.vercel.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank"
+								onclick="trackClickEvent('click','portfolioProject','Eventbrite Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Eventbrite clone</h3>
+										<span class="folio-types">
+											ReactJS, Firebase, TypeScript, TailWindCSS, HTML, CSS and Responsive Design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+					<div class="bgrid folio-item" data-aos="fade-up">
+						<div class="item-wrap">
+							<img src="images/shopify-app.png" alt="Shopify Clone App">
+							<a href="https://shopifycloneapp.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Shopify Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Shopify Clone</h3>
+										<span class="folio-types">
+											ReactJs, Hooks, HTML, CSS and JavaScript.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
 
-			
+					<div class="bgrid folio-item" data-aos="fade-right">
+						<div class="item-wrap">
+							<img src="./images/airbnb-app.png" alt="airBnB APP">
+							<a href="https://clonebnb.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','airBnB Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">airBnB clone-APP</h3>
+										<span class="folio-types">
+											ReactJS, Hooks, Javascript, HTML, CSS and Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-				<div class="bgrid folio-item" data-aos="fade-left">
-					<div class="item-wrap">
-					 <img src="https://leonel.netlify.com/portfolio/tshirt.fw.png" alt="Tshirt-Awesome">
-					   <a href="https://tshirt-awesome.netlify.com/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','T-Shirt');">                                    
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Tshirt-Awesome</h3>                             
-										 <span class="folio-types">
-										   ReactJS, Html5, Css3, Jquery and Javascript.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
+					<div class="bgrid folio-item" data-aos="fade-left">
+						<div class="item-wrap">
+							<img src="images/movietube-app.png" alt="MovieTube App">
+							<a href="https://movietube.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','MovieTube APP');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">MovieTube APP</h3>
+										<span class="folio-types">
+											ReactJs, imdb APP, axios, Hooks, HTML, CSS and JavaScript.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-				
-				<div class="bgrid folio-item" data-aos="fade-up">
-					<div class="item-wrap">
-						<img src="images/instagram-clone-ui.png" alt="Instagram UI Clone">
-					   <a href="https://instantify.vercel.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Instagram Clone');">                                    
-						  <div class="folio-item-table">
-							  <div class="folio-item-cell">
-								  <h3 class="folio-title">Instagram UI Clone</h3>                             
-										  <span class="folio-types">
+
+
+
+					<div class="bgrid folio-item" data-aos="fade-down">
+						<div class="item-wrap">
+							<img src="images/twitter.png" alt="Twitter Clone App">
+							<a href="https://vuetter-clone.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Twitter Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Twitter UI Clone</h3>
+										<span class="folio-types">
+											VueJS, TailWind css, HTML and JavaScript.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+					<div class="bgrid folio-item" data-aos="fade-up">
+						<div class="item-wrap">
+							<img src="images/find-git.png" alt="Shopping list App">
+							<a href="https://findgit.vercel.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Find GitHub');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Find GitHub Users</h3>
+										<span class="folio-types">
+											ReactJs, Hooks, HTML, CSS and JavaScript.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+					<div class="bgrid folio-item" data-aos="fade-right">
+						<div class="item-wrap">
+							<img src="images/ebay-clone.png" alt="Ebay Clone">
+							<a href="https://ebayapp.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Ebay Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Ebay Clone - Interface</h3>
+										<span class="folio-types">
+											Javascript, ReactJS, HTML5, CSS3, Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+					<div class="bgrid folio-item" data-aos="fade-left">
+						<div class="item-wrap">
+							<img src="https://leonel.netlify.com/portfolio/cyalive.png" alt="CyaLive Clone">
+							<a href="https://cyalive.netlify.com/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Cyalive');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">CyaLive Clone</h3>
+										<span class="folio-types">
+											React and Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+					<div class="bgrid folio-item" data-aos="fade-down">
+						<div class="item-wrap">
+							<img src="images/shopping-list.png" alt="Shopping list App">
+							<a href="https://market-listing.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Shopping List');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Shopping List</h3>
+										<span class="folio-types">
+											ReactJs, Hooks, HTML, CSS and JavaScript.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+					<div class="bgrid folio-item" data-aos="fade-up">
+						<div class="item-wrap">
+							<img src="https://flickrapp.netlify.com/images/bg-banner.jpg" alt="Flickr App">
+							<a href="https://flickrapp.netlify.com/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Flickr App');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Flickr App</h3>
+										<span class="folio-types">
+											ReactJs, HTML, CSS and flickr API.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+					<div class="bgrid folio-item" data-aos="fade-right">
+						<div class="item-wrap">
+							<img src="images/yelp.png" alt="Yelp Clone App">
+							<a href="https://yelpclone-app.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Yelp Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Yelp Clone</h3>
+										<span class="folio-types">
+											ReactJs, Yelp API, HTML, CSS and JavaScript.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+
+
+
+
+					<div class="bgrid folio-item" data-aos="fade-left">
+						<div class="item-wrap">
+							<img src="https://leonel.netlify.com/portfolio/tshirt.fw.png" alt="Tshirt-Awesome">
+							<a href="https://tshirt-awesome.netlify.com/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','T-Shirt');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Tshirt-Awesome</h3>
+										<span class="folio-types">
+											ReactJS, Html5, Css3, Jquery and Javascript.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+
+					<div class="bgrid folio-item" data-aos="fade-up">
+						<div class="item-wrap">
+							<img src="images/instagram-clone-ui.png" alt="Instagram UI Clone">
+							<a href="https://instantify.vercel.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank"
+								onclick="trackClickEvent('click','portfolioProject','Instagram Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Instagram UI Clone</h3>
+										<span class="folio-types">
 											ReactJS, Html5, Css3 and Javascript.
-										</span>                 
-									 </div>                             
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->   
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-				<div class="bgrid folio-item" data-aos="fade-down">
-					<div class="item-wrap">
-						<img src="images/tinder-clone.png" alt="Tinder Clone">
-					   <a href="https://tindev-clone.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Tinder Clone');">                                    
-						  <div class="folio-item-table">
-							  <div class="folio-item-cell">
-								  <h3 class="folio-title">Tinder Clone App</h3>                             
-										  <span class="folio-types">
+					<div class="bgrid folio-item" data-aos="fade-down">
+						<div class="item-wrap">
+							<img src="images/tinder-clone.png" alt="Tinder Clone">
+							<a href="https://tindev-clone.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Tinder Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Tinder Clone App</h3>
+										<span class="folio-types">
 											ReactJS, Firebase, Html5, Css3 and Javascript.
-										</span>                 
-									 </div>                             
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->   
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-				<div class="bgrid folio-item" data-aos="fade-left">
-					<div class="item-wrap">
-					 <img src="images/paper.png" alt="Paper UI Clone">
-					   <a href="https://paperapp-clone.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Paper Clone');">                                      
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Paper Clone</h3>                               
-										 <span class="folio-types">
-										  VueJS, TailWindCSS and Javascript.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->     
-
-
-
-				<div class="bgrid folio-item" data-aos="fade-right">
-					<div class="item-wrap">
-					 <img src="https://ticketarena.netlify.com/img/background.jpg" alt="Ticket Arena">
-					   <a href="https://ticketarena.netlify.com/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Ticket Arena');">                                      
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Ticket Arena</h3>                               
-										 <span class="folio-types">
-										   University of Toronto - Course Project.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->     
+					<div class="bgrid folio-item" data-aos="fade-left">
+						<div class="item-wrap">
+							<img src="images/paper.png" alt="Paper UI Clone">
+							<a href="https://paperapp-clone.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Paper Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Paper Clone</h3>
+										<span class="folio-types">
+											VueJS, TailWindCSS and Javascript.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
 
-				<div class="bgrid folio-item" data-aos="fade-up">
-					<div class="item-wrap">
-					 <img src="https://leonel.netlify.com/portfolio/product-complete.fw.png" alt="Product Hunt">
-					   <a href="https://producthunter.netlify.com/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Product Hunt');">                                     
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Product Hunt</h3>                               
-										 <span class="folio-types">
-										   AngularJS, CSS3, HTML5 and Javascript.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
+					<div class="bgrid folio-item" data-aos="fade-right">
+						<div class="item-wrap">
+							<img src="https://ticketarena.netlify.com/img/background.jpg" alt="Ticket Arena">
+							<a href="https://ticketarena.netlify.com/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Ticket Arena');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Ticket Arena</h3>
+										<span class="folio-types">
+											University of Toronto - Course Project.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-				<div class="bgrid folio-item" data-aos="fade-down">
-					<div class="item-wrap">
-						<img src="images/kijiji-clone.png" alt="Kijiji Clone Interface">
-						<a href="https://klonejiji.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Kijiji Clone');">                                       
-						  <div class="folio-item-table">
-							  <div class="folio-item-cell">
-								  <h3 class="folio-title">Kijiji Clone - UI</h3>                                
-										  <span class="folio-types">
-											   ReactJS, Javascript, HTML5, CSS3, Responsive design.
-										</span>                 
-									 </div>                             
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
 
-				<div class="bgrid folio-item" data-aos="fade-right">
-					<div class="item-wrap">
-					 <img src="https://leonel.netlify.com/portfolio/jg-m.fw.png" alt="Janagana">
-					   <a href="https://janagana.netlify.com/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Janagana');">
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Janagana</h3>                               
-										 <span class="folio-types">
-										   Json, Ionic, AngularJS and Material design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
+					<div class="bgrid folio-item" data-aos="fade-up">
+						<div class="item-wrap">
+							<img src="https://leonel.netlify.com/portfolio/product-complete.fw.png" alt="Product Hunt">
+							<a href="https://producthunter.netlify.com/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Product Hunt');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Product Hunt</h3>
+										<span class="folio-types">
+											AngularJS, CSS3, HTML5 and Javascript.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-				<div class="bgrid folio-item" data-aos="fade-left">
-					<div class="item-wrap">
-					 <img src="images/foodtime.png" alt="FoodTime">
-					 <a href="https://foodtime.netlify.com/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','FoodTime');">                                        
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">FoodTime</h3>                               
-										 <span class="folio-types">
-										   Javascript, HTML5, SCSS/CSS3, BEM and Responsive design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
+					<div class="bgrid folio-item" data-aos="fade-down">
+						<div class="item-wrap">
+							<img src="images/kijiji-clone.png" alt="Kijiji Clone Interface">
+							<a href="https://klonejiji.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Kijiji Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Kijiji Clone - UI</h3>
+										<span class="folio-types">
+											ReactJS, Javascript, HTML5, CSS3, Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+					<div class="bgrid folio-item" data-aos="fade-right">
+						<div class="item-wrap">
+							<img src="https://leonel.netlify.com/portfolio/jg-m.fw.png" alt="Janagana">
+							<a href="https://janagana.netlify.com/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Janagana');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Janagana</h3>
+										<span class="folio-types">
+											Json, Ionic, AngularJS and Material design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-	        	<div class="bgrid folio-item" data-aos="fade-up">
-                    <div class="item-wrap">
-                        <img src="images/skozoo.png" alt="Skozoo">
-                        <a href="https://skozoo.netlify.com/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Skoozo');">                                      
-                            <div class="folio-item-table">
-                                <div class="folio-item-cell">
-                                    <h3 class="folio-title">Skozoo</h3>                             
-                                            <span class="folio-types">
-                                            Javascript, HTML, CSS, Responsive design and Angular7.
-                                        </span>                 
-                                    </div>                          
-                            </div>                    
-                        </a>
-                    </div>
-                </div> <!-- /folio-item -->	
+					<div class="bgrid folio-item" data-aos="fade-left">
+						<div class="item-wrap">
+							<img src="images/foodtime.png" alt="FoodTime">
+							<a href="https://foodtime.netlify.com/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','FoodTime');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">FoodTime</h3>
+										<span class="folio-types">
+											Javascript, HTML5, SCSS/CSS3, BEM and Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-				<div class="bgrid folio-item" data-aos="fade-left">
-					<div class="item-wrap">
-					 <img src="images/dmz_video.png" alt="DMZ Video Player">
-					 <a href="https://rb.gy/1hzg39" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','DMZ');">                                     
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">DMZ Video Player</h3>                               
-										 <span class="folio-types">
-										   ReactJS, Javascript, HTML5, CSS3, Responsive design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
+					<div class="bgrid folio-item" data-aos="fade-up">
+						<div class="item-wrap">
+							<img src="images/skozoo.png" alt="Skozoo">
+							<a href="https://skozoo.netlify.com/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Skoozo');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Skozoo</h3>
+										<span class="folio-types">
+											Javascript, HTML, CSS, Responsive design and Angular7.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-				<div class="bgrid folio-item" data-aos="fade-down">
-					<div class="item-wrap">
-						<img src="https://leonel.netlify.com/portfolio/mozilla.png" alt="Mozilla Blog page">
-						<a href="https://mozilla-blog.netlify.com/hackathon/2018/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Mozilla');">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Mozilla Blog page</h3>                              
-											<span class="folio-types">
+					<div class="bgrid folio-item" data-aos="fade-left">
+						<div class="item-wrap">
+							<img src="images/dmz_video.png" alt="DMZ Video Player">
+							<a href="https://rb.gy/1hzg39" class="overlay" rel="noopener noreferrer" target="_blank"
+								onclick="trackClickEvent('click','portfolioProject','DMZ');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">DMZ Video Player</h3>
+										<span class="folio-types">
+											ReactJS, Javascript, HTML5, CSS3, Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+					<div class="bgrid folio-item" data-aos="fade-down">
+						<div class="item-wrap">
+							<img src="https://leonel.netlify.com/portfolio/mozilla.png" alt="Mozilla Blog page">
+							<a href="https://mozilla-blog.netlify.com/hackathon/2018/" class="overlay"
+								rel="noopener noreferrer" target="_blank"
+								onclick="trackClickEvent('click','portfolioProject','Mozilla');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Mozilla Blog page</h3>
+										<span class="folio-types">
 											Javascript, HTML, CSS and Responsive design.
-										</span>                 
-									</div>                          
-							</div>                    
-						</a>
-					</div>
-				</div> <!-- /folio-item -->
-
-
-				
-
-
-				<div class="bgrid folio-item" data-aos="fade-up">
-					<div class="item-wrap">
-					 <img src="https://leonel.netlify.com/portfolio/hackathon.png" alt="Hackathon">
-					 <a href="https://www.youtube.com/watch?v=X5PWzBvAzXU&amp=&feature=youtu.be" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Hackathon');">                                        
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Hackathon</h3>                              
-										 <span class="folio-types">
-										   Javascript, ionic, HTML, CSS and Responsive design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
-
-				<div class="bgrid folio-item" data-aos="fade-left">
-					<div class="item-wrap">
-					 <img src="images/spotify-clone.png" alt="Spotify-clone">
-					 <a href="https://spoticlonefy.netlify.app/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Spotify Clone');">                                        
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Spotify UI Clone</h3>                               
-										 <span class="folio-types">
-										   ReactJS, HTML, CSS and Responsive design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
-				
-
-				<div class="bgrid folio-item" data-aos="fade-down">
-					<div class="item-wrap">
-					 <img src="images/lendified-app.png" alt="Lendified APP">
-					 <a href="https://new.merchantgrowth.com/welcome" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Lendified');"> 
-					 <!-- <a href="https://directapp.lendified.com/" class="overlay" rel="noopener noreferrer" target="_blank">  -->
-						 
-						 
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Lendified/Merchant Growth</h3>                              
-										 <span class="folio-types">
-										   ReactJS, NodeJS, Javascript, HTML5, CSS3, Responsive design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
 
-				<div class="bgrid folio-item" data-aos="fade-right">
-					<div class="item-wrap">
-					 <img src="images/ninja-form.png" alt="Magic Form">
-					 <a href="https://form-ninja.netlify.com/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Magic Form');">                                      
-						  <div class="folio-item-table">
-							 <div class="folio-item-cell">
-								 <h3 class="folio-title">Magic Form</h3>                             
-										 <span class="folio-types">
-										   Javascript, HTML, CSS and Responsive design.
-									   </span>                   
-									</div>                           
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
 
 
-				<div class="bgrid folio-item" data-aos="fade-left">
-					<div class="item-wrap">
-						<img src="images/staples-front.png" alt="onResearch">
-						<a href="https://www.staples.ca/a/content/smarter-business-financing" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','Staples');">                                        
-						  <div class="folio-item-table">
-							  <div class="folio-item-cell">
-								  <h3 class="folio-title">Staples</h3>                               
-										  <span class="folio-types">
-											   ReactJS, Javascript, jQuery, HTML5, CSS3, Responsive design.
-										</span>                 
-									 </div>                             
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
-				
+					<div class="bgrid folio-item" data-aos="fade-up">
+						<div class="item-wrap">
+							<img src="https://leonel.netlify.com/portfolio/hackathon.png" alt="Hackathon">
+							<a href="https://www.youtube.com/watch?v=X5PWzBvAzXU&amp=&feature=youtu.be" class="overlay"
+								rel="noopener noreferrer" target="_blank"
+								onclick="trackClickEvent('click','portfolioProject','Hackathon');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Hackathon</h3>
+										<span class="folio-types">
+											Javascript, ionic, HTML, CSS and Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
-				<div class="bgrid folio-item" data-aos="fade-up">
-					<div class="item-wrap">
-						<img src="images/onr.png" alt="onResearch">
-						<a href="http://www.onrcx.com/" class="overlay" rel="noopener noreferrer" target="_blank" onclick="trackClickEvent('click','portfolioProject','onResearch');">                                        
-						  <div class="folio-item-table">
-							  <div class="folio-item-cell">
-								  <h3 class="folio-title">OnResearch</h3>                               
-										  <span class="folio-types">
-											   Javascript, jQuery, HTML5, CSS3, Responsive design.
-										</span>                 
-									 </div>                             
-						  </div>                    
-					   </a>
-					</div>
-				</div> <!-- /folio-item -->
+					<div class="bgrid folio-item" data-aos="fade-left">
+						<div class="item-wrap">
+							<img src="images/spotify-clone.png" alt="Spotify-clone">
+							<a href="https://spoticlonefy.netlify.app/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Spotify Clone');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Spotify UI Clone</h3>
+										<span class="folio-types">
+											ReactJS, HTML, CSS and Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
 
 
-<!-- 
+					<div class="bgrid folio-item" data-aos="fade-down">
+						<div class="item-wrap">
+							<img src="images/lendified-app.png" alt="Lendified APP">
+							<a href="https://new.merchantgrowth.com/welcome" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Lendified');">
+								<!-- <a href="https://directapp.lendified.com/" class="overlay" rel="noopener noreferrer" target="_blank">  -->
+
+
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Lendified/Merchant Growth</h3>
+										<span class="folio-types">
+											ReactJS, NodeJS, Javascript, HTML5, CSS3, Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+
+					<div class="bgrid folio-item" data-aos="fade-right">
+						<div class="item-wrap">
+							<img src="images/ninja-form.png" alt="Magic Form">
+							<a href="https://form-ninja.netlify.com/" class="overlay" rel="noopener noreferrer"
+								target="_blank" onclick="trackClickEvent('click','portfolioProject','Magic Form');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Magic Form</h3>
+										<span class="folio-types">
+											Javascript, HTML, CSS and Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+					<div class="bgrid folio-item" data-aos="fade-left">
+						<div class="item-wrap">
+							<img src="images/staples-front.png" alt="onResearch">
+							<a href="https://www.staples.ca/a/content/smarter-business-financing" class="overlay"
+								rel="noopener noreferrer" target="_blank"
+								onclick="trackClickEvent('click','portfolioProject','Staples');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Staples</h3>
+										<span class="folio-types">
+											ReactJS, Javascript, jQuery, HTML5, CSS3, Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+					<div class="bgrid folio-item" data-aos="fade-up">
+						<div class="item-wrap">
+							<img src="images/onr.png" alt="onResearch">
+							<a href="http://www.onrcx.com/" class="overlay" rel="noopener noreferrer" target="_blank"
+								onclick="trackClickEvent('click','portfolioProject','onResearch');">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">OnResearch</h3>
+										<span class="folio-types">
+											Javascript, jQuery, HTML5, CSS3, Responsive design.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> <!-- /folio-item -->
+
+
+					<!-- 
 				<div class="bgrid folio-item" data-aos="fade-down">
 					<div class="item-wrap">
 					 <img src="https://leonel.netlify.com/portfolio/homenova.png" alt="Homenova">
@@ -1007,9 +1214,9 @@
 					</div>
 				</div>  -->
 
-				
 
-				 <!-- <div class="bgrid folio-item">
+
+					<!-- <div class="bgrid folio-item">
                         <div class="item-wrap">
                             <img src="images/staples-app.png" alt="Staples Financial">
                            <a href="https://rb.gy/6vcbfr" class="overlay" rel="noopener noreferrer" target="_blank">
@@ -1024,240 +1231,252 @@
                            </a>
                         </div>
                     </div>  -->
- 
 
-	            <!-- modal popups - begin
+
+					<!-- modal popups - begin
 	            ============================================================= -->
-	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+					<div id="modal-01" class="popup-modal slider mfp-hide">
 
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
-				     	</div>      	
+						<div class="media">
+							<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+						</div>
 
-					   <div class="description-box">
-					      <h4>Liberty</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<div class="description-box">
+							<h4>Liberty</h4>
+							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-					      <div class="categories">Web Development</div>			               
-					   </div>
+							<div class="categories">Web Development</div>
+						</div>
 
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
+						<div class="link-box">
+							<a href="http://www.behance.net">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
 
-				   </div> <!-- /modal-01 -->
+					</div> <!-- /modal-01 -->
 
-				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+					<div id="modal-02" class="popup-modal slider mfp-hide">
 
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
-				     	</div>      	
+						<div class="media">
+							<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+						</div>
 
-					   <div class="description-box">
-					      <h4>Shutterbug</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<div class="description-box">
+							<h4>Shutterbug</h4>
+							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-					      <div class="categories">Web Design</div>			               
-					   </div>
+							<div class="categories">Web Design</div>
+						</div>
 
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
+						<div class="link-box">
+							<a href="http://www.behance.net">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
 
-				   </div> <!-- /modal-02 -->
+					</div> <!-- /modal-02 -->
 
-				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+					<div id="modal-03" class="popup-modal slider mfp-hide">
 
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
-				     	</div>      	
+						<div class="media">
+							<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+						</div>
 
-					   <div class="description-box">
-					      <h4>Clouds</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<div class="description-box">
+							<h4>Clouds</h4>
+							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-					      <div class="categories">Web Design</div>			               
-					   </div>
+							<div class="categories">Web Design</div>
+						</div>
 
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
+						<div class="link-box">
+							<a href="http://www.behance.net">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
 
-				   </div> <!-- /modal-03 -->
+					</div> <!-- /modal-03 -->
 
-				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+					<div id="modal-04" class="popup-modal slider mfp-hide">
 
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
-				     	</div>      	
+						<div class="media">
+							<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+						</div>
 
-					   <div class="description-box">
-					      <h4>Beetle</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<div class="description-box">
+							<h4>Beetle</h4>
+							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-					      <div class="categories">Branding</div>			               
-					   </div>
+							<div class="categories">Branding</div>
+						</div>
 
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
+						<div class="link-box">
+							<a href="http://www.behance.net">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
 
-				   </div> <!-- /modal-04 -->
+					</div> <!-- /modal-04 -->
 
-				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+					<div id="modal-05" class="popup-modal slider mfp-hide">
 
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
-				     	</div>      	
+						<div class="media">
+							<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+						</div>
 
-					   <div class="description-box">
-					      <h4>Lighthouse</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<div class="description-box">
+							<h4>Lighthouse</h4>
+							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-					      <div class="categories">Web Development</div>			               
-					   </div>
+							<div class="categories">Web Development</div>
+						</div>
 
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
+						<div class="link-box">
+							<a href="http://www.behance.net">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
 
-				   </div> <!-- /modal-05 -->
+					</div> <!-- /modal-05 -->
 
-				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+					<div id="modal-06" class="popup-modal slider mfp-hide">
 
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
-				     	</div>      	
+						<div class="media">
+							<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+						</div>
 
-					   <div class="description-box">
-					      <h4>Salad</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<div class="description-box">
+							<h4>Salad</h4>
+							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-					      <div class="categories">Branding</div>			               
-					   </div>
+							<div class="categories">Branding</div>
+						</div>
 
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
+						<div class="link-box">
+							<a href="http://www.behance.net">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
 
-				   </div> <!-- /modal-06 -->
+					</div> <!-- /modal-06 -->
 
 
-				   <!-- modal popups - end
+					<!-- modal popups - end
 	            ============================================================= -->
 
-	         </div> <!-- /portfolio-wrapper --> 
+				</div> <!-- /portfolio-wrapper -->
 
-   		</div>  <!-- /twelve -->   
+			</div> <!-- /twelve -->
 
-   	</div> <!-- /portfolio-content --> 
-		
-	</section> <!-- /portfolio --> 
+		</div> <!-- /portfolio-content -->
+
+	</section> <!-- /portfolio -->
 
 
-	
-   <!-- contact
+
+	<!-- contact
    ================================================== -->
 	<section id="contact">
 
 		<div class="row section-intro">
-   		<div class="col-twelve">
+			<div class="col-twelve">
 
-   			<h5>Contact</h5>
-   			<h1>I'd Love To Hear From You.</h1>
+				<h5>Contact</h5>
+				<h1>I'd Love To Hear From You.</h1>
 
-   			<p class="lead"> leoneloliver@gmail.com   </p>
+				<p class="lead"> leoneloliver@gmail.com </p>
 
-   		</div> 
-   	</div> <!-- /section-intro -->
+			</div>
+		</div> <!-- /section-intro -->
 
-  
-   		
-   	</div> <!-- /contact-info -->
-		
+
+
+		</div> <!-- /contact-info -->
+
 	</section> <!-- /contact -->
 
 
-   <!-- footer
+	<!-- footer
    ================================================== -->
 
-   <footer>
-     	<div class="row">
+	<footer>
+		<div class="row">
 
-     		<div class="col-six tab-full pull-right social">
+			<div class="col-six tab-full pull-right social">
 
-     			<ul class="footer-social">        
-			      	<li><a href="https://github.com/leoneloliver" onclick="trackClickEvent('click','SocialIconFooter','github');"><i class="fa fa-github"></i></a></li>  
-					<li><a href="https://www.linkedin.com/in/leonel-oliveira/" onclick="trackClickEvent('click','SocialIconFooter','linkedin');"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://www.instagram.com/leoneloliver/" onclick="trackClickEvent('click','SocialIconFooter','instagram');"><i class="fa fa-instagram"></i></a></li>
+				<ul class="footer-social">
+					<li><a href="https://github.com/leoneloliver"
+							onclick="trackClickEvent('click','SocialIconFooter','github');"><i
+								class="fa fa-github"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/leonel-oliveira/"
+							onclick="trackClickEvent('click','SocialIconFooter','linkedin');"><i
+								class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://www.instagram.com/leoneloliver/"
+							onclick="trackClickEvent('click','SocialIconFooter','instagram');"><i
+								class="fa fa-instagram"></i></a></li>
 					<!-- <li><a href="https://twitter.com/leoneloliver"><i class="fa fa-twitter"></i></a></li> -->
-			   </ul> 
-	      		
-	      </div>
+				</ul>
 
-      	<div class="col-six tab-full">
-	      	<div class="copyright">
-		        	<span>Made with <i class="fa fa-heart"></i> by Leonel</span>          	
-		         </div>		                  
-	      	</div>
+			</div>
 
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
+			<div class="col-six tab-full">
+				<div class="copyright">
+					<span>Made with <i class="fa fa-heart"></i> by Leonel</span>
+				</div>
+			</div>
 
-      	</div> <!-- /row -->     	
-   </footer>  
+			<div id="go-top">
+				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+			</div>
 
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
+		</div> <!-- /row -->
+	</footer>
 
-   <!-- Java Script
-   ================================================== --> 
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
 
-   <!-- adding vueJS library CDN -->
-   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+	<!-- Java Script
+   ================================================== -->
 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
+	<!-- adding vueJS library CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 
-
-
-   <script src="https://cdn.jsdelivr.net/gh/leoneloliver/portfolio@master/js/mysetfont_v2.3.js"></script>
-   
-
-   <!-- <script src="js/mysetfont_v2.3.js"></script> -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
 
 
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/gh/leoneloliver/portfolio@master/js/mysetfont_v2.3.js"></script>
+
+
+	<!-- <script src="js/mysetfont_v2.3.js"></script> -->
+
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<script>
-	Vue.component('skill-item', {
-		props: ['skill'],
-		template: '<div class="flex-column"><i :class="skill.icon"></i><p>{{ skill.text }}</p></div>'
-	});
-	var app = new Vue({
-		el: '#skills',
-		data: {
-			skills: listSkills
-		}
-	});
+		Vue.component('skill-item', {
+			props: ['skill'],
+			template: '<div class="flex-column"><i :class="skill.icon"></i><p>{{ skill.text }}</p></div>'
+		});
+		var app = new Vue({
+			el: '#skills',
+			data: {
+				skills: listSkills
+			}
+		});
 	</script>
 	<script>
 		AOS.init(
 			{
 				// "duration": 1000,
 				"disable": "mobile"
-				
+
 			}
-    	)
+		)
 	</script>
 
 
