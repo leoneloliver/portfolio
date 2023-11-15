@@ -1257,6 +1257,15 @@ header .logo a {
 	background: none;
 	color: #07d88c;
 }
+.flex{
+	display: flex;
+}
+.fa-youtube-play {
+    font-size: 30px !important;
+    color: red;
+    margin-top: -3px;
+    margin-right: 15px;
+}
 
 
 /**
