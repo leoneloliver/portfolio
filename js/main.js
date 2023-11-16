@@ -305,6 +305,7 @@ const listSkills = [
 	{ icon: 'devicon-html5-plain', text: 'html5' },
 	{ icon: 'devicon-css3-plain', text: 'css3' },
 	{ icon: 'devicon-javascript-plain', text: 'javascript' },
+	{ icon: 'devicon-typescript-plain', text: 'typescript' },
 	{ icon: 'devicon-jquery-plain', text: 'jquery' },
 	{ icon: 'devicon-bootstrap-plain', text: 'bootstrap' },
 	{ icon: 'devicon-tailwindcss-plain', text: 'tailwindcss' },
@@ -320,6 +321,9 @@ const listSkills = [
 	{ icon: 'devicon-github-plain', text: 'github' },
 	{ icon: 'devicon-php-plain', text: 'php' },
 	{ icon: 'devicon-mysql-plain', text: 'mysql' },
+	{ icon: 'devicon-rails-plain-wordmark', text: 'ruby on rails' },
+	{ icon: 'devicon-firebase-plain-wordmark', text: 'firebase' },
+	
 ]
 
 function showAlertWhenDivReachesTop() {
