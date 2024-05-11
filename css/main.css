@@ -1544,7 +1544,7 @@ header .logo a {
 	max-width: 850px;
 	margin-bottom: 3.6rem;
 }
-.about-content h3, #projects h3 {
+.about-content h3, #appjects h3 {
 	font-family: "poppins-bold", sans-serif;
 	font-size: 1.8rem;
 	text-transform: uppercase;
@@ -1813,7 +1813,7 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
-#portfolio, #projects {
+#portfolio, #projects, #articles {
 	background: #FFFFFF;
 	padding-top: 10rem;
 	padding-bottom: 5rem;
