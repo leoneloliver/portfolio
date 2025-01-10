@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Calculate animation duration based on content width
 	function updateDuration() {
 		const contentWidth = marquee.offsetWidth / 2;
-		const speed = 30; // Lower number = faster
+		const speed = 90;
 		const duration = contentWidth / speed;
 		marquee.style.animationDuration = `${duration}s`;
 	}
