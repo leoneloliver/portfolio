@@ -164,7 +164,7 @@
 
 		<div class="row about-content">
 
-			<div class="col-six tab-full" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine">
+			<div class="col-twelve tab-full" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine">
 
 				<h3 data-font>Skills</h3>
 
@@ -183,73 +183,35 @@
 
 			</div>
 
-			<div class="col-six tab-full">
+		</div>
 
-				<ul class="skill-bars hidden">
-					<li>
-						<div class="progress percent100"><span>100%</span></div>
-						<strong>HTML5</strong>
-					</li>
-					<li>
-						<div class="progress percent100"><span>100%</span></div>
-						<strong>CSS3</strong>
-					</li>
-					<li>
-						<div class="progress percent90"><span>90%</span></div>
-						<strong>Javascript</strong>
-					</li>
-					<li>
-						<div class="progress percent95"><span>100%</span></div>
-						<strong>JQuery</strong>
-					</li>
-					<li>
-						<div class="progress percent80"><span>90%</span></div>
-						<strong>SASS</strong>
-					</li>
-					<li>
-						<div class="progress percent95"><span>100%</span></div>
-						<strong>Bootstrap</strong>
-					</li>
-					<li>
-						<div class="progress percent45"><span>80%</span></div>
-						<strong>ReactJS</strong>
-					</li>
-					<li>
-						<div class="progress percent40"><span>40%</span></div>
-						<strong>AngularJS</strong>
-					</li>
-					<li>
-						<div class="progress percent40"><span>40%</span></div>
-						<strong>VueJS</strong>
-					</li>
-					<li>
-						<div class="progress percent90"><span>90%</span></div>
-						<strong>Git</strong>
-					</li>
-					<li>
-						<div class="progress percent100"><span>100%</span></div>
-						<strong>Github</strong>
-					</li>
-					<li>
-						<div class="progress percent90"><span>90%</span></div>
-						<strong>Gulp</strong>
-					</li>
+	</section> <!-- /process-->
 
 
-				</ul> <!-- /skill-bars -->
+
+	<section id="skill-icons">
+		<div class="row">
+			<div class="col-twelve">
+
 
 				<!-- Vue skill-icons -->
-				<div class="flex-container" id="skills" data-aos="fade-left" data-aos-offset="500"
+				<!-- <div class="flex-container" id="skills" data-aos="fade-left" data-aos-offset="500"
 					data-aos-easing="ease-in-sine">
 
 					<skill-item v-for="item in skills" v-bind:skill="item" v-bind:key="item.id"></skill-item>
 
+				</div> -->
+
+				<div class="marquee-wrap" id="skills">
+					<div class="marquee" id="marquee">
+						<skill-item v-for="item in skills" v-bind:skill="item" v-bind:key="item.id"></skill-item>
+					</div>
 				</div>
+
 				<!-- Vue skill-icons -->
 
 
 			</div>
-
 		</div>
 
 		<div class="row button-section">
@@ -262,8 +224,7 @@
 					onclick="trackClickEvent('click','btn','Download Resume');">Download Resume</a>
 			</div>
 		</div>
-
-	</section> <!-- /process-->
+	</section>
 
 
 
@@ -1366,7 +1327,7 @@
 
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-	<script>
+	<!-- <script>
 		Vue.component('skill-item', {
 			props: ['skill'],
 			template: '<div class="flex-column"><i :class="skill.icon"></i><p>{{ skill.text }}</p></div>'
@@ -1377,7 +1338,21 @@
 				skills: listSkills
 			}
 		});
+	</script> -->
+
+	<script>
+		Vue.component('skill-item', {
+			props: ['skill'],
+			template: '<div class="marquee-item"><i :class="skill.icon"></i></div>'
+		});
+		var app = new Vue({
+			el: '#skills',
+			data: {
+				skills: listSkills
+			}
+		});
 	</script>
+
 	<script>
 		AOS.init(
 			{
